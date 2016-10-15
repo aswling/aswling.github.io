@@ -2,7 +2,7 @@
 .center {
 	margin: auto;
 	padding: 50px;
-		}
+}
 
 body {
 	background: url("pond.png");
@@ -10,22 +10,20 @@ body {
 	background-size: cover;
 	background-position: center;
 	font-family: Avenir, sans-serif;
-	margin: 0;
+	margin: auto;
 	text-align: center;
 	color: white;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
+::-webkit-scrollbar { display: none; }
 
 container {
-	width: 800px;
-	margin: 0 auto;
+	width: 1000px;
+	margin: auto;
 	padding: 0;
 }
 
-header { position:relative; }
+header { position: fixed; }
 
 h1 {
 	color: white;
@@ -33,32 +31,19 @@ h1 {
 	font-size: 50px;
 }
 
-img {
-	width: 50%;
-	max-width: 500px;
-	max-height: 500px;
-}
-
 menu {
 	postion:absolute;
-	bottom:0;
+	bottom: 0;
 }
 
-ul {
-	padding: 0;
-}
+ul { padding: 0; }
 
 li {
 	text-align: center;
 	display: inline;
 	padding: 10px;
 	list-style: none;
-}
-
-ol {
-	text-align: center;
-	padding: 10px;
-	list-style: none;
+	text-decoration: none;
 }
 
 .link {
@@ -66,13 +51,19 @@ ol {
 	list-style: none;
 }
 
-.link a { color: white;}
-.link a:hover {	color: yellow; }
-.link a:visited { color: white; }
+a { color: white; }
+a:hover { color: yellow; }
+a:visited { text-decoration: none; }
+a:active { color: yellow; }
 
-.active {
-	font-weight: bold;
-	background: black;
+img {
+	float: left;
+	max-width: 200px;
+	max-height: 200px;
 }
 
-home-header { color: white; }
+p {
+	width: 700px;
+	text-align: left;
+	margin: auto;
+}
