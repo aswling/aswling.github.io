@@ -51,10 +51,11 @@ li {
 	list-style: none;
 }
 
-a { color: white; }
+a {
+	color: white;
+	text-decoration: none;
+}
 a:hover { color: yellow; }
-a:visited { text-decoration: none; }
-a:active { color: yellow; }
 
 img {
 	float: left;
