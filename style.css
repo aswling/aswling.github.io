@@ -60,7 +60,7 @@ a:hover { color: yellow; }
 img {
 	float: center;
 	max-width: 300px;
-	max-height: 300px;
+	max-height: 200px;
 	padding: 25px;
 }
 
