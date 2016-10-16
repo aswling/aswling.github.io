@@ -77,5 +77,6 @@ figure {
 
 figcaption {
 	font-family: Helvetica;
+	font-weight: normal;
 	line-height: 0;
 }
