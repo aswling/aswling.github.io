@@ -1,0 +1,82 @@
+/*STYLESHEET*/
+.center {
+	margin: auto;
+	padding: 50px;
+}
+
+header { position: fixed; }
+
+h1 {
+	color: white;
+	font-family: Helvetica;
+	font-size: 50px;
+}
+
+body {
+	background: url("imgs/shenme.gif");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	font-family: Avenir, sans-serif;
+	margin: auto;
+	text-align: center;
+	color: white;
+}
+
+::-webkit-scrollbar { display: none; }
+
+container {
+	width: 1000px;
+	margin: auto;
+	padding: 0;
+}
+
+menu {
+	postion:absolute;
+	bottom: 0;
+}
+
+ul { padding: 0; }
+
+li {
+	text-align: center;
+	display: inline;
+	padding: 10px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.link {
+	color: white;
+	list-style: none;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+img {
+	float: center;
+	max-width: 300px;
+	max-height: 200px;
+	padding: 25px;
+}
+
+p {
+	width: 700px;
+	text-align: left;
+	margin: auto;
+}
+
+figure {
+	display: inline-block;
+	float: center;
+}
+
+figcaption {
+	font-family: Helvetica;
+	font-weight: normal;
+	line-height: 0;
+}
