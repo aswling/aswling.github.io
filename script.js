@@ -13,15 +13,31 @@ $("a.jumble-up-text").on("mouseover mouseout", function(){
     $this.text(sShowTxt);
 });
 
+//https://perishablepress.com/3-ways-preload-images-css-javascript-ajax/
+var images = new Array()
+    function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+        }
+    }
+    preload(
+        "img/upleft.png",
+        "img/downleft.png",
+        "img/downright.png",
+        "img/upright.png",
+        "img/front.png"
+    )
+
 //http://stackoverflow.com/questions/9476843/changing-a-image-with-mouse-positions
 var image_src = {
-    up: "img/up.png",
+    //up: "img/up.png",
     upleft: "img/upleft.png",
-    left: "img/left.png",
+    //left: "img/left.png",
     downleft: "img/downleft.png",
-    down: "img/down.png",
+    //down: "img/down.png",
     downright: "img/downright.png",
-    right: "img/right.png",
+    //right: "img/right.png",
     upright: "img/upright.png",
     front: "img/front.png"
 };
