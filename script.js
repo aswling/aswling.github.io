@@ -1,7 +1,7 @@
 //https://teamtreehouse.com/community/random-background-color
 function ran_col() {
     var color = '#';
-    var letters = ['000000','FFFF00','FF0000','00FFFF'];
+    var letters = ['000000','FF0000','00FFFF'];
     color += letters[Math.floor(Math.random() * letters.length)];
     document.getElementById('page').style.background = color;
 }
