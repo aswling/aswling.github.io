@@ -96,7 +96,12 @@ a {
 		font-size: 12px;
 	}
 
-	#social li { text-align: left; }
+	#social li {
+		padding-right: 15px;
+		text-align: center;
+		display: inline;
+		position: relative;
+	}
 
 	.link {	color: white; }
 
