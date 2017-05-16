@@ -69,7 +69,7 @@ a {
 	#about p {
 		font-size: 12px;
 		text-align: left;
-		position: relative;
+		position: absolute;
 		margin-bottom: 50px;
 	}
 
