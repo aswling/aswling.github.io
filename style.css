@@ -16,11 +16,15 @@ body {
 	margin-top: 10%;
 }
 
-@media phone and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-	p {
-		font-size: 12px;
+@media (min-device-width: 320px) and (max-device-width: 768px) {
+	body, #about {
 		max-width: 768px;
+		max-height: 640px;
 	}
+}
+
+@media (min-device-width: 320px) and (max-device-width: 768px) {
+	p { font-size: 12px; }
 }
 
 h1 {
@@ -57,7 +61,12 @@ li {
 	margin-left: 30%;
 }
 
-@media phone and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+.head img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 768px) {
 	img {
 		max-width: 768px;
 		max-height: 640px;
