@@ -17,9 +17,10 @@ body {
 }
 
 @media phone and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
-	#about p {
+	body, p {
 		font-size: 12px;
 		width: 50%;
+		height: 50%;
 	}
 }
 
