@@ -17,10 +17,10 @@ body {
 }
 
 @media phone and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
-	body, p {
+	body, #about, p {
 		font-size: 12px;
-		width: 50%;
-		height: 50%;
+		width: auto;
+		height: auto;
 	}
 }
 
@@ -59,9 +59,9 @@ li {
 }
 
 @media phone and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
-	.head {
-		max-width: 50%;
-		max-height: 50%;
+	img {
+		width: auto;
+		height: auto;
 	}
 }
 
