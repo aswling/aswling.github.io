@@ -3,17 +3,17 @@ body {
 	background-color: black;
 	font-family: Avenir, sans-serif;
 	color: white;
-	margin-left: 10%;
-	margin-right: 10%;
+	max-width: 768px;
+	max-height: 640px;
 	overflow: hidden;
 }
 
 #about p {
-	font-size: 36px;
-	float: right;
-	width: 75%;
+	font-size: 12px;
 	text-align: left;
 	margin-top: 10%;
+	max-width: 768px;
+	max-height: 640px;
 }
 
 h1 {
