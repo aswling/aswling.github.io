@@ -75,8 +75,6 @@ a {
 
 	menu { position:absolute; }
 
-	ul { padding: 0; }
-
 	li { list-style: none; text-decoration: none; }
 
 	.link {	color: white; }
@@ -102,7 +100,7 @@ a {
 	}
 
 	#social li {
-		padding-right: 45px;
+		padding-right: 30px;
 		text-align: center;
 		display: inline;
 		position: relative;
