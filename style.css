@@ -16,24 +16,15 @@ body {
 	margin-top: 10%;
 }
 
-h1 {
-	text-align: left;
-	font-size: 50px;
-}
+h1 { text-align: left; font-size: 50px; }
 
 ::-webkit-scrollbar { display: none; }
 
-menu {
-	position:absolute;
-	bottom: 0;
-}
+menu { position:absolute; bottom: 0; }
 
 ul { padding: 0; }
 
-li {
-	list-style: none;
-	text-decoration: none;
-}
+li { list-style: none; text-decoration: none; }
 
 #menu li {
 	font-size: 20px;
@@ -56,10 +47,7 @@ li {
 	bottom: 10%;
 }
 
-#social li {
-	text-align: left;
-	padding: 5px 0;
-}
+#social li { text-align: left; padding: 5px 0; }
 
 .link {	color: white; }
 
@@ -86,22 +74,13 @@ a {
 		max-width: 768px;
 	}
 
-	h1 {
-		text-align: left;
-		font-size: 50px;
-	}
+	h1 { text-align: left; font-size: 50px; }
 
-	menu {
-		position:absolute;
-		bottom: 0;
-	}
+	menu { position:absolute; bottom: 0; }
 
 	ul { padding: 0; }
 
-	li {
-		list-style: none;
-		text-decoration: none;
-	}
+	li { list-style: none; text-decoration: none; }
 
 	#menu li {
 		font-size: 20px;
@@ -112,11 +91,7 @@ a {
 		bottom: 30px;
 	}
 
-	.head {
-		position: relative;
-		margin-top: -50%;
-		margin-left: 0;
-	}
+	img { width: 75%; height: 75%;}
 
 	.footer {
 		font-size: 18px;
@@ -124,10 +99,7 @@ a {
 		bottom: 10%;
 	}
 
-	#social li {
-		text-align: left;
-		padding: 5px 0;
-	}
+	#social li { text-align: left; padding: 5px 0; }
 
 	.link {	color: white; }
 
