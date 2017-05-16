@@ -81,6 +81,14 @@ a {
 
 	li { list-style: none; text-decoration: none; }
 
+	.link {	color: white; }
+
+	a {
+		color: white;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
 	#menu li {
 		font-size: 12px;
 		padding-right: 15px;
@@ -97,17 +105,11 @@ a {
 	}
 
 	#social li {
-		padding-right: 15px;
+		padding-right: 10px;
 		text-align: center;
 		display: inline;
 		position: relative;
 	}
 
-	.link {	color: white; }
-
-	a {
-		color: white;
-		font-weight: bold;
-		text-decoration: none;
-	}
+	#social a { font-weight: normal; }
 }
