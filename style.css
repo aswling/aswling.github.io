@@ -95,7 +95,6 @@ a {
 		text-align: center;
 		display: inline;
 		position: relative;
-		bottom: 30px;
 	}
 
 	img { width: 80%; height: 80%;}
@@ -105,11 +104,9 @@ a {
 	}
 
 	#social li {
-		padding-right: 10px;
+		padding-right: 30px;
 		text-align: center;
 		display: inline;
 		position: relative;
 	}
-
-	#social a { font-weight: normal; }
 }
