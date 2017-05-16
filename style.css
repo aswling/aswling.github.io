@@ -16,11 +16,10 @@ body {
 	margin-top: 10%;
 }
 
-@media phone and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
-	body, #about, p {
+@media phone and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	p {
 		font-size: 12px;
-		width: auto;
-		height: auto;
+		max-width: 768px;
 	}
 }
 
@@ -58,10 +57,10 @@ li {
 	margin-left: 30%;
 }
 
-@media phone and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
+@media phone and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 	img {
-		width: auto;
-		height: auto;
+		max-width: 768px;
+		max-height: 640px;
 	}
 }
 
