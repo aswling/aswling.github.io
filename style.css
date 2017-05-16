@@ -68,7 +68,7 @@ a {
 	}
 
 	#about p {
-		font-size: 14px;
+		font-size: 12px;
 		text-align: left;
 		max-width: 768px;
 	}
@@ -94,7 +94,6 @@ a {
 
 	.footer {
 		font-size: 12px;
-		position: fixed;
 	}
 
 	#social li { text-align: left; padding: 5px 0; }
