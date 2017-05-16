@@ -20,7 +20,7 @@ h1 { text-align: left; font-size: 50px; }
 
 ::-webkit-scrollbar { display: none; }
 
-menu { position:absolute; bottom: 0; }
+menu { position: absolute; bottom: 0; }
 
 ul { padding: 0; }
 
@@ -69,13 +69,13 @@ a {
 	#about p {
 		font-size: 12px;
 		text-align: left;
-		position: relative;
-		margin-bottom: 10%;
+		position: absolute;
+		bottom: 0;
 	}
 
 	h1 { text-align: left; font-size: 36px; }
 
-	menu { position:absolute; }
+	menu { position: absolute; }
 
 	li { list-style: none; text-decoration: none; }
 
