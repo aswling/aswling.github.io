@@ -30,7 +30,9 @@ var image_src = {
     front: "img/front.png"
 };
 
-$(document).mousemove(function(event){
+if(screen.width >= 320 && screen.width <= 768) {
+    } else {
+    $(document).mousemove(function(event){
     var mloc = {
         x: event.pageX,
         y: event.pageY
@@ -65,3 +67,4 @@ $(document).mousemove(function(event){
         $(".head").attr("src", image_src.front);
     }
 });
+}

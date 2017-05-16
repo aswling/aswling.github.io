@@ -51,9 +51,9 @@ li {
 }
 
 .footer {
-	font-size: 16px;
+	font-size: 18px;
 	position: fixed;
-	bottom: 30px;
+	bottom: 10%;
 }
 
 #social li {
@@ -75,7 +75,8 @@ a {
 		font-family: Avenir, sans-serif;
 		color: white;
 		max-width: 768px;
-		max-height: 640px;
+		overflow: hidden;
+		padding: 0;
 	}
 
 	#about p {
@@ -83,7 +84,6 @@ a {
 		text-align: left;
 		margin-top: 10%;
 		max-width: 768px;
-		max-height: 640px;
 	}
 
 	h1 {
@@ -114,14 +114,14 @@ a {
 
 	.head {
 		position: relative;
-		margin-top: -10%;
-		margin-left: 30%;
+		margin-top: -50%;
+		margin-left: 0;
 	}
 
 	.footer {
-		font-size: 16px;
+		font-size: 18px;
 		position: fixed;
-		bottom: 30px;
+		bottom: 10%;
 	}
 
 	#social li {
