@@ -69,8 +69,8 @@ a {
 	#about p {
 		font-size: 12px;
 		text-align: left;
-		position: absolute;
-		bottom: 0;
+		position: relative;
+		margin-bottom: 30px;
 	}
 
 	h1 { text-align: left; font-size: 36px; }
