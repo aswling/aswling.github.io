@@ -95,7 +95,12 @@ a {
 		position: relative;
 	}
 
-	img { width: 80%; height: 80%;}
+	img {
+		text-align: center;
+		position: absolute;
+		width: 80%;
+		height: 80%;
+	}
 
 	.footer {
 		font-size: 12px;
