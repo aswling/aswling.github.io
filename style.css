@@ -95,16 +95,10 @@ a {
 		position: relative;
 	}
 
-	img {
-		text-align: center;
-		position: absolute;
-		width: 80%;
-		height: 80%;
-	}
+	.head { text-align: center; position: absolute; }
+	img { width: 80%; height: 80%; }
 
-	.footer {
-		font-size: 12px;
-	}
+	.footer { font-size: 12px; }
 
 	#social li {
 		padding-right: 30px;
