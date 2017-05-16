@@ -69,6 +69,8 @@ a {
 	#about p {
 		font-size: 12px;
 		text-align: left;
+		position: relative;
+		margin-bottom: 10%;
 	}
 
 	h1 { text-align: left; font-size: 36px; }
