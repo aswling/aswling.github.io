@@ -331,6 +331,11 @@ img.img-popup {
 		margin: 0 0 1em 1em;
 	}
 
+	#profile img {
+		float: none;
+		max-width: 100%;
+	}
+
 	.samples1x img, .samples2x img, .samples3x img {
 		max-width: 100%;
 	}
