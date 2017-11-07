@@ -1,0 +1,146 @@
+/*STYLESHEET*/
+/*type*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:700');
+
+@font-face {
+    font-family: 'Seravek Light';
+    src: url('fonts/seravek-light.eot'),
+    url('fonts/seravek-light.woff') format('woff'),
+    url('fonts/seravek-light.ttf') format('truetype'),
+	url('fonts/seravek-light.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Seravek Bold';
+    src: url('fonts/seravek-bold.eot'),
+    url('fonts/seravek-bold.woff') format('woff'),
+    url('fonts/seravek-bold.ttf') format('truetype'),
+	url('fonts/seravek-bold.svg') format('svg');
+}
+
+::-webkit-scrollbar { display: none; }
+
+/*highlight*/
+::-moz-selection {
+    color: #0000ff;
+    background: #ff0000;
+}
+
+::selection {
+    color: #0000ff;
+    background: #ff0000;
+}
+
+/*elements*/
+body {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.container {
+	margin: 0 1em;
+}
+
+header {
+	width: 100%;
+}
+
+h1 {
+	float: left;
+	text-align: left;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 48px;
+	margin: 0 auto;
+	color: #000;
+}
+
+h1:hover {
+	text-shadow: -3px 3px #fff,
+	-4px 3px #000,
+	-2px 3px #000,
+	-3px 2px #000,
+	-3px 4px #000;
+}
+
+h2 {
+	font-family: 'Source Code Pro', monospace;
+}
+
+p {
+	font-family: 'Seravek Light', Helvetica Neue, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a.info {
+	text-decoration: underline;
+}
+
+a:hover.info {
+	background-color: #ffff00;
+}
+
+li {
+	font-family: 'Seravek Bold', Helvetica Neue, sans-serif;
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+}
+
+/*navigation*/
+nav {
+	display: inline;
+}
+
+nav ul {
+	text-align: right;
+}
+
+nav li {
+	position: relative;
+	margin: 1em 0 1em 1em;
+}
+
+nav a {
+	background-color: #ffff00;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/*about*/
+#profile {
+	float: right;
+	display: inline-block;
+}
+
+#profile img {
+	float: left;
+	max-width: 50%;
+	margin-right: 1em;
+}
+
+#profile h2 {
+	color: #000;
+	text-shadow: -2px 2px #fff,
+	-3px 2px #000,
+	-1px 2px #000,
+	-2px 1px #000,
+	-2px 3px #000;
+}
+
+#social ul {
+	text-align: right;
+}
+
+#social li {
+	padding-left: 1em;
+}
+
+#social a:hover {
+	text-decoration: none;
+}
