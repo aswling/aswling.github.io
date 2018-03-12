@@ -108,6 +108,7 @@ footer a {
 	float: right;
 }
 
+
 /*tags*/
 .info a, .work a, #intro a {
 	text-decoration: underline;
@@ -179,6 +180,10 @@ footer a {
 	line-height: 1em;
 	color: #fff;
 	text-decoration: none;
+}
+
+.embed {
+	text-align: center;
 }
 
 /*about*/
