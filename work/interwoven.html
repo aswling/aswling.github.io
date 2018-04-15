@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alex Ling</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css" type="text/css"/>
+	<link rel="stylesheet" href="../fotorama.css" type="text/css"/>
+	<link rel="icon" type="image/jpg" href="../img/icon.jpg">
+</head>
+<div id="top"></div>
+<body>
+	<header>
+		<a href="../index.html"><h1>ALEX LING</h1></a>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="../about.html">ABOUT</a></li>
+			<li><a href="../Alex Ling.pdf" target="blank">RESUME</a></li>
+			<li><a href="mailto:alexswling@gmail.com">CONTACT</a></li>
+		</ul>
+	</nav>
+
+<div class="work">
+	<h2>Interwoven</h2>
+	<h3>Skills: Physical computing, interactive installation, experimental design</h3>
+	<h3>Tools: Arduino, Maxbotix Ultrasonic Rangefinder, NeoPixel RGB LED strips</h3>
+	<h3>Contributors: Alex Ling, <a href="http://elainelo.space/" style="text-decoration: none" target="_blank">Elaine Lo</a></h3>
+	<div class="anchor">
+		<h3><a href="#documentation">Documentation</a> // <a href="#final">Final Project</a>
+	</div>
+
+	<p>Interactive installation showcased at the <a href="https://wp.nyu.edu/gafest/">Galltin Arts Festival 2018</a>. The code for this project can be found on <a href="https://github.com/aswling/interwoven">GitHub</a>.</p>
+	<p>Interwoven is a multimedia installation that combines the natural tactility of found material with physical computing. As the viewer approaches the piece, LEDs light up across Interwoven's surface, activating the work and the space it occupies and implicating the viewer in this exchange. The responsiveness of Interwoven reflects the ethics of living responsibily during a time of anthropgenic climate change and environmental injustice. Interwoven is an interactrive work that emphasizes the need to look to life as a diverse assemblage of inter- and intra-related entanglements, connections, branches, and networks, and a way of seeing all living things as kin.</p>
+
+	<div class="samples1x">
+		<img src="img/interwoven/gaf_1.jpg" alt="cover">
+	</div>
+	<div style="text-align:center">
+		<video width=100% height=100% controls>
+			<source src="img/interwoven/interwoven_201800407.mov">
+		</video>
+	</div>
+
+	<h3 id="documentation">Documentation (<a href="#top">top</a>)</h3>
+	<p><b>3/22/2018</b></p>
+		<p>After our proposal for Interwoven was accepted to the Gallatin Arts Festival, Elaine and I picked up the <a href="https://www.maxbotix.com/documents/LV-MaxSonar-EZ_Datasheet.pdf">Maxbotix Ultrasonic Rangefinder LV-EZ0</a>. Our goal was to map the viewer's distance from the sensor to an LED strip, so when the viewer was, let's say, two feet away from the sensor, the strip would begin brightening based on the viewer's position. So if the viewer was a few inches from the project, the strip would be at nearly maximum brightness, whereas if the viewer was on the cusp of two feet away or even farther, the strip would be dim or go completely dark. Since our project was fairly wide, my former <a href="http://www.ennuigo.com/">creative computing professor</a> suggested we use an ultrasonic rangefinder since it has both a wide "beam" (area in front of sensor), and also a long "throw" (distance from sensor).</p>
+		<p>Since neither of us had used ultrasonic rangefinders before, we figured it would be easier to install the project piece by piece, rather than buy all of the materials and try to fit everything together simultaneously. We followed the <a href="https://www.maxbotix.com/documents/LV-MaxSonar-EZ_Datasheet.pdf">datasheet</a> for the sensor, which made setting up the code and adjusting the distance limits for the sensor pretty straightforward. Since we just wanted to test the sensor at this step, we connected the sensor to a single LED to make sure the distance being read was able to correlate to the brightness of the LED. Here is <a href="https://github.com/aswling/interwoven/blob/master/interwoven1/interwoven1.ino">our code</a> for the single LED with the sensor.</p>
+	<div class="fotorama" data-loop="true">
+		<img src="img/interwoven/circuit_20180322_1.jpg" alt="circuit with single LED">
+		<img src="img/interwoven/circuit_20180322_2.jpg" alt="circuit with single LED">
+		<img src="img/interwoven/circuit_20180322_3.jpg" alt="circuit with single LED">
+	</div>
+
+	<p><b>3/25/2018</b></p>
+		<p>After setting up the sensor, we spent this session adding the LED strip. We ran into a few bumps at this stage, including buying the wrong strip (it was 12V and the microcontroller can only output 5V), but the main problem was figuring out how to program the strip to the sensor. We used the <a href="http://tinkersphere.com/led-strips/1179-rgb-led-strip-addressable-1m-neopixel-compatible-ws2812.html">NeoPixel RGB LED strip (WS2812)</a>, but quickly realized the code we used for the single LED was vastly different from what we needed to use the strip.</p>
+		<p>Our first problem was deciding which library to use. We began with Adafruit's NeoPixel library, but then read somewhere that to adjust the brightness of the strip we should try the FastLED library since you're not supposed to adjust brightness with Adafruit's library (it's meant more as a setup feature than something that can be continuously adjusted). We tried using the FastLED library for a few hours, but the strip wasn't responding to any of the commands.</p>
+		<p>Thus, we returned to the Adafruit library (wow!). We spent several more hours trying to get around the fact the Adafruit library didn't have an adjustable brightness feature, but realized we <i>could</i> continuously change the color. By setting the "lowest brightness" to black and the "highest" to white, we could make it seem like the strip was decreasing and increasing in brightness (even though it was really just a color change).</p>
+		<p>Unfortunately, the strip wasn't responding at all to the sensor. After scouring the <a href="https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels">Adafruit NeoPixel Uberguide</a> and racking our brains for 12+ hours on the project, we decided to come back to it in a few days.</p>
+
+	<p><b>3/28-3/30/2018</b></p>
+		<p>Weirdly enough, when we came back to the project it seemed our last code actually worked(!) and the strips were lighting without a problem. We figured it was a faulty connection in the circuit that caused the project's previous unresponsiveness.</p>
+		<p>Thus, with the code working, we spent this session connecting the final LED strips and cleaning up the code. Since we used an addressable NeoPixel, we had to call the brightness/color of each pixel, so we put all of the pixels in an array and controlled the brightness in the loop function. We also included several tests in case the strip acted up to check if anything malfunctioned (e.g. testing first pixel's brightness, testing brightness based on the distance limit we set for the sensor, etc).</p>
+	<div style="text-align:center">
+		<video width=100% height=100% controls>
+			<source src="img/interwoven/interwoven_20180328_4.mp4" type="video/mp4">
+		</video>
+		<video width=100% height=100% controls>
+			<source src="img/interwoven/interwoven_20180330.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="fotorama" data-loop="true">
+		<img src="img/interwoven/circuit_20180328_1.jpg" alt="circuit with LED strip">
+		<img src="img/interwoven/circuit_20180328_2.jpg" alt="circuit with LED strip">
+	</div>
+
+	<h3 id="final">Final Project (<a href="#top">top</a>)</h3>
+	<p>After we brought Interwoven to the gallery, the LEDs started acting up again and eventually stopped working. Since we were attaching the microcontroller and wires in a slightly altered arrangement to fit the gallery, we thought we just had to reinforce the circuit. However, when we tested the program we noticed that the sensor was still working and realized it was actually one of the LED strips that failed. The first strip broke, which was preventing the other strips from getting power. After we replaced the strip, everything began working again and we're happy to say that Interwoven was successively up and running for the entire festival. Here is <a href="https://github.com/aswling/interwoven/blob/master/interwoven8/interwoven8.ino">our final code</a>.</p>
+	<p>If we were to build on this, I think it would definitely be interesting to work with multiple sensors to ensure visitors' movements would always be read. Having additional interactive elements, like a pressure-sensitive interaction that prompts the visitor to touch the work (rather than just look at it), would also be something we would like to explore. Additionally, we ran into a problem with brightness color towards the end that we still couldn't solve. As you can see in a few of the videos from 3/28 and 3/30, the lights turned white at their maximum brightness, but within a few days the only red would light up (even though the color value was set to (255,255,255)). We tested the blue and green values of the strip, both of which seemed to work, so if we were to redo this we probably would use a NeoPixel RGBW strip to ensure we would be able to get a white light.</p>
+	<div style="text-align:center">
+		<video width=100% height=100% controls>
+			<source src="img/interwoven/gaf.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="fotorama" data-loop="true">
+		<img src="img/interwoven/gaf_2.jpg" alt="installation detail">
+		<img src="img/interwoven/gaf_3.jpg" alt="installation detail">
+		<img src="img/interwoven/gaf_4.jpg" alt="installation detail">
+	</div>
+</div>
+
+<footer>
+	<p><a href="#top">Back to the Top</a></p>
+	<p>© Alex Ling 2018</p>
+</footer>
+
+<script type="text/javascript" src="../jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="../script.js"></script>
+<script type="text/javascript" src="../fotorama.js"></script>
+</body>
+</html>
