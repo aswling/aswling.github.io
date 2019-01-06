@@ -1,183 +1,131 @@
 <!--
-Hi, thanks for checking out my website! I coded this with help from following resources:
+  ____  _____   _____ _   _ _____    ____ _____        ______   _____   __
+ | __ )| ____| |_   _| | | | ____|  / ___/ _ \ \      / / __ ) / _ \ \ / /
+ |  _ \|  _|     | | | |_| |  _|   | |  | | | \ \ /\ / /|  _ \| | | \ V / 
+ | |_) | |___    | | |  _  | |___  | |__| |_| |\ V  V / | |_) | |_| || |  
+ |____/|_____|   |_| |_| |_|_____|  \____\___/  \_/\_/  |____/ \___/ |_|  
+                                                                          
+Hello! Thanks for checking out my portfolio. I designed and coded this website from scratch with help from the following sources:
 
->Source Code Pro from Google Fonts (https://fonts.google.com/specimen/Source+Code+Pro)
->Responsive image gallery from Tania Rascia (https://www.taniarascia.com/how-to-build-a-responsive-image-gallery-with-flexbox/)
->JQuery Lightbox from from Saksham Mittal (https://github.com/saksham-mittal)
->Social icons from Font Awesome (http://fontawesome.io/)
->Smooth scrolling from Chris Coyier (https://chriscoyier.net/)
->JQuery gallery from Fotorama (http://fotorama.io/)
+	>Meno (https://fonts.adobe.com/fonts/meno-display) and Europa (https://fonts.adobe.com/fonts/europa) from Adobe Fonts (thank u Typekit for my life)
+	>Flexbox from Tayler Summs (https://flexbox.help/)
+	>Smooth scrolling from Chris Coyier (https://chriscoyier.net/)
 
-Feel free to shoot me an email at alexswling@gmail.com if you want to chat about art, design, cute dogs, or anything else that interests ya!
+I'm always eager to learn and push myself as a designer and artist, so feel free to reach out at alexswling@gmail.com if you want to chat or work together!
 -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109979617-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-109979617-1');
-	</script>	
-	<title>Alex Ling</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css" type="text/css"/>
-	<link rel="icon" type="image/jpg" href="img/icon.jpg">
+	<title>ALEX LING</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" type="image/jpg" href="img/logo.png">
 </head>
 <div id="top"></div>
+
 <body>
 	<header>
-		<a href="index.html"><h1>ALEX LING</h1></a>
+		<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 	</header>
-
 	<nav>
 		<ul>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="Alex Ling.pdf" target="blank">RESUME</a></li>
-			<li><a href="mailto:alexswling@gmail.com">CONTACT</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="AlexLingResume.pdf" target="blank">Resume</a></li>
 		</ul>
 	</nav>
+	
+	<div id="intro">
+		<h1>Alex Ling is a designer and illustrator based in Brooklyn. She currently works at Amino designing marketing materials and digital goods.</h1>
+	</div>
 
-<div id="intro">
-	<h3>Hi! I'm a designer and illustrator based in NYC. I graduated from NYU in May 2018 and currently work at Amino Apps on the Creative team. I hope you enjoy my work!</h3>
-</div>
-
-<div class="container">
-	<div class="grid">
-
-	<div class="cell">
-		<div class="gallery"><a href="work/literacyreview.html">
-			<img src="img/thumb/lr16.jpg" class="thumb" alt="Literacy Review Volume 16">
-			<div class="middle">
-				<div class="title">
-				<h2>The Literacy Review</h2>
-	      		<p>Book design, art direction, print design, graphic design</p>
+	<div class="gallery">
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/amino.html" onmouseover="document.amino.src='img/thumb/amino_hover.gif';" onmouseout="document.amino.src='img/thumb/amino.gif';"><img src="img/thumb/amino.gif" alt="Amino" name="amino"></a>
+				<div class="thumbabout">
+					<h3><a href="work/amino.html">Amino</a></h3>
+					<p>Digital goods, animated ads, marketing collateral, oh my!</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
+		</div>
 
-	<div class="cell">
-		<div class="gallery"><a href="work/motion.html">
-			<img src="img/thumb/motion.gif" class="thumb" alt="motion">
-			<div class="middle">
-				<div class="title">
-				<h2>Motion Reel</h2>
-	      		<p>Animation, motion graphics, video, sound, photography</p>
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/literacyreview.html" onmouseover="document.lr16.src='img/thumb/lr16_hover.jpg';" onmouseout="document.lr16.src='img/thumb/lr16.jpg';"><img src="img/thumb/lr16.jpg" alt="LR16" name="lr16"></a>
+				<div class="thumbabout">
+					<h3><a href="work/literacyreview.html">The Literacy Review</a></h3>
+					<p>Design and art direction for <i>The Literacy Review</i>, a publication featuring work from ESOL students in New York City.</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
+		</div>
 
-	<div class="cell">
-		<div class="gallery"><a href="work/interwoven.html">
-			<img src="img/thumb/interwoven.jpg" class="thumb" alt="Interwoven">
-			<div class="middle">
-				<div class="title">
-				<h2>Interwoven</h2>
-	      		<p>Physical computing, interactive installation, experimental design</p>
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/motion.html" onmouseover="document.motion.src='img/thumb/motion_hover.gif';" onmouseout="document.motion.src='img/thumb/motion.gif';"><img src="img/thumb/motion.gif" alt="motion" name="motion"></a>
+				<div class="thumbabout">
+					<h3><a href="work/motion.html">Motion Reel</a></h3>
+					<p>Ooo, she moves...</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
+		</div>
 
-	<div class="cell">
-		<div class="gallery"><a href="work/select.html">
-			<img src="img/thumb/select.jpg" class="thumb" alt="Select">
-			<div class="middle">
-				<div class="title">
-				<h2>Select Beer Branding</h2>
-	      		<p>Graphic design, branding, packaging</p>
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/interwoven.html" onmouseover="document.interwoven.src='img/thumb/interwoven_hover.jpg';" onmouseout="document.interwoven.src='img/thumb/interwoven.jpg';"><img src="img/thumb/interwoven.jpg" alt="Interwoven" name="interwoven"></a>
+				<div class="thumbabout">
+					<h3><a href="work/interwoven.html">Interwoven</a></h3>
+					<p>An interactive installation using Arduino <i>and</i> a ridiculous amount of cardboard? It's more likely than you think!</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
+		</div>
 
-	<div class="cell">
-		<div class="gallery"><a href="work/ofmiceandmen.html">
-			<img src="img/thumb/omm.jpg" class="thumb" alt="Of Mice and Men Cover">
-			<div class="middle">
-				<div class="title">
-				<h2>Of Mice and Men Cover Redesign</h2>
-	      		<p>Illustration, print design, book design</p>
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/select.html" onmouseover="document.select.src='img/thumb/select_hover.jpg';" onmouseout="document.select.src='img/thumb/select.jpg';"><img src="img/thumb/select.jpg" alt="Select" name="select"></a>
+				<div class="thumbabout">
+					<h3><a href="work/select.html">Select</a></h3>
+					<p>Although I'm not much of a beer buff, making craft beer branding sure is fun.</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
+		</div>
 
-	<div class="cell">
-		<div class="gallery"><a href="work/feedmag.html">
-			<img src="img/thumb/feed.jpg" class="thumb" alt="Feed Magazine">
-			<div class="middle">
-				<div class="title">
-				<h2>FEED Magazine</h2>
-	      		<p>Editorial design, print design, experimental design</p>
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/feed.html" onmouseover="document.feed.src='img/thumb/feed_hover.jpg';" onmouseout="document.feed.src='img/thumb/feed.jpg';"><img src="img/thumb/feed.jpg" alt="FEED" name="feed"></a>
+				<div class="thumbabout">
+					<h3><a href="work/feed.html">FEED Magazine</a></h3>
+					<p>Ugh those dang millennials, always making hand-folded, 12 foot-long, experimental magazines about art and Internet culture.</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
+		</div>
 
-	<div class="cell">
-		<div class="gallery"><a href="work/skindeep.html">
-			<img src="img/thumb/skindeep.jpg" class="thumb" alt="Skin Deep">
-			<div class="middle">
-				<div class="title">
-					<h2>Skin Deep</h2>
-	      		<p>Web development, web design, net art, audio</p>
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/commissions.html" onmouseover="document.commissions.src='img/thumb/commissions_hover.jpg';" onmouseout="document.commissions.src='img/thumb/commissions.jpg';"><img src="img/thumb/commissions.jpg" alt="commissions" name="commissions"></a>
+				<div class="thumbabout">
+					<h3><a href="work/commissions.html">Commissions</a></h3>
+					<p>[Toro y Moi's "Freelance" plays in the distance]</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
-
-	<div class="cell">
-		<div class="gallery"><a href="work/homecoming.html">
-			<img src="img/thumb/homecoming.jpg" class="thumb" alt="Homecoming">
-			<div class="middle">
-				<div class="title">
-				<h2>Homecoming (回家)</h2>
-	      		<p>Comic, illustration, print design</p>
+		</div>
+		
+		<div class="cell">
+			<div class="thumb">
+				<a href="work/personal.html" onmouseover="document.personal.src='img/thumb/personal_hover.gif';" onmouseout="document.personal.src='img/thumb/personal.gif';"><img src="img/thumb/personal.gif" alt="personal" name="personal"></a>
+				<div class="thumbabout">
+					<h3><a href="work/personal.html">Personal Work</a></h3>
+					<p>Sometimes you make things just for the heck of it.</p>
 				</div>
 			</div>
-		</a></div>
-	</div>
-
-	<div class="cell">
-		<div class="gallery"><a href="work/aapihealth.html">
-			<img src="img/thumb/dmtp.jpg" class="thumb" alt="dmtp">
-			<div class="middle">
-				<div class="title">
-				<h2>AAPI Culture & Health</h2>
-	      		<p>Web development, web design, photography, video, sound</p>
-				</div>
-			</div>
-		</a></div>
-	</div>
-
-	<div class="cell">
-		<div class="gallery"><a href="work/personal.html">
-			<img src="img/thumb/zaijian.gif" class="thumb" alt="Personal Work">
-			<div class="middle">
-				<div class="title">
-				<h2>Personal Work</h2>
-	      		<p>Illustration, graphic design, animation, web design</p>
-				</div>
-			</div>
-		</a></div>
-	</div>
+		</div>
 
 	</div>
-</div>
 
 <footer>
 	<p><a href="#top">Back to the Top</a></p>
-	<p>© Alex Ling 2018</p>
+	<p>© Alex Ling 2019</p>
 </footer>
-
 <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
