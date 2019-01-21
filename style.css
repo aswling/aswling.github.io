@@ -137,7 +137,7 @@ footer p {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.work h3 {
+.work h3, .work b {
 	font-family: europa, sans-serif;
 	font-weight: 700;
 	font-style: normal;
