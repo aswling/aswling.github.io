@@ -52,7 +52,7 @@ footer p {
 	font-family: meno-display, serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 42pt;
+	font-size: 32pt;
 	line-height: 1.1;
 	margin: 1em 0 1em 0;
 }
@@ -121,6 +121,7 @@ footer p {
 	display: inline;
 	padding-left: .5em;
 }
+#info img {	max-width: calc(100%/3); }
 #social a:hover {
 	text-decoration: none;
 	font-style: normal;
