@@ -49,11 +49,12 @@ footer p {
 
 /*FRONT PAGE*/
 #intro h1 {
+	line-height: 1.1;
 	font-family: meno-display, serif;
 	font-weight: 700;
-	font-style: normal;
 	font-size: 32pt;
 	line-height: 1.1;
+	font-style: normal;
 	margin: 1em 0 1em 0;
 }
 
