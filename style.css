@@ -48,18 +48,9 @@ footer p {
 }
 
 /*FRONT PAGE*/
-#intro h1 {
-	line-height: 1.1;
-	font-family: meno-display, serif;
-	font-weight: 700;
-	font-size: 32pt;
-	line-height: 1.1;
-	font-style: normal;
-	margin: 1em 0 1em 0;
-}
-
-/*FRONT PAGE GALLERY*/
 .gallery {
+	padding-top: 1em;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -143,18 +134,33 @@ footer p {
 	font-family: europa, sans-serif;
 	font-weight: 700;
 	font-style: normal;
+	margin: 1em 0 -.5em 0;
 }
-.workcover, .work1x, .work2x, .work3x { text-align: center; }
+.workcover, .work1x, .work2x, .work3x, .work4x { text-align: center; }
 .workcover img { max-width: 80%; } /*desktop: 1 column, mobile: 1 column*/
 .work1x img { max-width: 45%; } /*desktop: 2 column, mobile: 1 column*/
+.workcover video { max-width: 50%; }
 .work1x video { max-width: 80%; }
-.work2x img { /*desktop: 2 column, mobile: 2 column*/
+.work3x video {
+	display: inline;
+	max-width: 30%;
+}
+.work2x img {
 	display: inline;
 	max-width: calc(100%/3);
 }
-.work3x img { /*desktop: 3 column, mobile: 2 column*/
+.work3x img {
 	display: inline;
 	max-width: 30%;
+}
+.work4x img {
+	display: inline;
+	max-width: 23%;
+}
+.credits p {
+	font-size: 14pt;
+	line-height: .3;
+	color: #807e7d;
 }
 
 /*RESPONSIVE*/
