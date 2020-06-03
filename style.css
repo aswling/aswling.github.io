@@ -139,8 +139,12 @@ footer p {
 .workcover, .work1x, .work2x, .work3x, .work4x { text-align: center; }
 .workcover img { max-width: 80%; } /*desktop: 1 column, mobile: 1 column*/
 .work1x img { max-width: 45%; } /*desktop: 2 column, mobile: 1 column*/
-.workcover video { max-width: 50%; }
-.work1x video { max-width: 80%; }
+.workcover video { max-width: 50%; } /*vertical*/
+.work1x video { max-width: 80%; } /*horizontal*/
+.work2x video {
+	display: inline;
+	max-width: calc(100%/3);
+}
 .work3x video {
 	display: inline;
 	max-width: 30%;
