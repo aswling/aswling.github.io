@@ -112,6 +112,7 @@ footer p {
 }
 
 /*WORK*/
+.work { padding-top: auto; }
 .work h1 {
 	font-family: europa, sans-serif;
 	font-weight: 700;
@@ -220,4 +221,7 @@ footer p {
 }
 @media screen and (min-width: 1366px) {
 	html { max-width: 80%; }
+}
+@media screen and (min-width: 1550px) {
+	.work { padding-top: 1em; }
 }
