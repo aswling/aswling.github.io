@@ -44,7 +44,6 @@ footer p {
 	font-family: europa, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-
 }
 
 /*FRONT PAGE*/
@@ -74,13 +73,6 @@ footer p {
 .thumb img {
 	max-width: 100%;
 	height: auto;
-}
-.thumbabout { max-width: 100%; }
-.thumbabout h3 {
-	margin: 0 0 -.5em 0;
-	font-family: europa, sans-serif;
-	font-weight: 700;
-	font-style: normal;
 }
 .thumb a {
 	background: linear-gradient(#0000ff, #e87dff);
@@ -149,7 +141,7 @@ footer p {
 	display: inline;
 	max-width: 30%;
 }
-.work2x img {
+.work2x img, {
 	display: inline;
 	max-width: calc(100%/3);
 }
@@ -165,6 +157,12 @@ footer p {
 	font-size: 14pt;
 	line-height: .3;
 	color: #807e7d;
+}
+.ig { margin-left: 10%; }
+.instagram-media {
+	width: 100%;
+	max-width: calc(100%/3.5);
+	float: left;
 }
 
 /*RESPONSIVE*/
@@ -213,10 +211,6 @@ footer p {
 		justify-content: flex-start;
 		align-items: baseline;
 		align-content: stretch;
-	}
-	.thumbabout {
-		margin: 0 0 1em 0;
-		max-width: 100%;
 	}
 	.cell {
 		display: inline-block;
