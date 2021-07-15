@@ -85,11 +85,6 @@ footer p {
 	display: inline-block;
 	width: 100%;
 }
-#profile img {
-	float: left;
-	max-width: 50%;
-	margin-right: 1em;
-}
 #profile h2 {
 	font-family: europa, sans-serif;
 	font-weight: 700;
@@ -100,7 +95,7 @@ footer p {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-#profile li {
+#profile li  {
 	list-style: none;
 	display: inline;
 	padding-left: .5em;
