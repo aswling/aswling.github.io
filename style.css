@@ -27,10 +27,10 @@ nav li {
 }
 body {
 	margin: 0 1em;
-	font-family: meno-display, serif;
-	font-weight: 300;
+	font-family: europa, sans-serif;
+	font-weight: 100;
 	font-style: normal;
-	font-size: 18pt;
+	font-size: 16pt;
 }
 a {
 	color: #0000ff;
@@ -39,7 +39,7 @@ a {
 a:hover { font-style: italic; }
 footer a { float: right; }
 footer p {
-	font-size: 14pt;
+	font-size: 12pt;
 	color: #0000ff;
 	font-family: europa, sans-serif;
 	font-weight: 400;
@@ -127,7 +127,7 @@ footer p {
 	font-family: europa, sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	margin: 1em 0 -.5em 0;
+	margin: 0 0 -.5em 0;
 }
 .workcover, .work1x, .work2x, .work3x, .work4x { text-align: center; }
 .workcover img { max-width: 80%; } /*desktop: 1 column, mobile: 1 column*/
@@ -155,7 +155,7 @@ footer p {
 	max-width: 23%;
 }
 .credits p {
-	font-size: 14pt;
+	font-size: 12pt;
 	line-height: .3;
 	color: #807e7d;
 }
@@ -184,6 +184,7 @@ footer p {
 		display: inline-block;
 		max-width: 100%;
 		margin: 0 auto;
+		margin-bottom: .15em;
 	}
 	#profile img {
 		float: none;
@@ -217,6 +218,7 @@ footer p {
 		display: inline-block;
 		max-width: 48%;
 		margin-right: .15em;
+		margin-bottom: .15em;
 	}
 }
 @media screen and (min-width: 1366px) {
