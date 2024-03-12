@@ -37,6 +37,11 @@ a {
 	text-decoration: none;
 }
 a:hover { font-style: italic; }
+#list ul { text-align: left; }
+#list li {
+	display: list-item;
+	list-style-position: inside;
+}
 footer a { float: right; }
 footer p {
 	font-size: 12pt;
@@ -95,12 +100,13 @@ footer p {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-#profile li  {
+#profile h3 { margin: 0 0 -.5em 0; }
+#info img {	max-width: calc(100%/3); }
+#social li  {
 	list-style: none;
 	display: inline;
 	padding-left: .5em;
 }
-#info img {	max-width: calc(100%/3); }
 #social a:hover {
 	text-decoration: none;
 	font-style: normal;
