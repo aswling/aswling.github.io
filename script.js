@@ -35,3 +35,18 @@ $('a[href*="#"]')
       }
     }
   });
+
+//Homepage thumbnail hover (https://stackoverflow.com/questions/12989529/display-image-on-link-hover)
+$(document).ready(function(){
+    $('.home a').on('mouseenter', function(evt){
+      $('.thumbnail').html('<img src="img/' + $(this).data('id') + '.' + $(this).data('ext') + '">');
+      // $('.thumbnail').css({left: evt.pageX+100, top: evt.pageY-100}).show(); //anchor to cursor
+      $('.thumbnail').css({
+        right: '10%', //anchor to right
+        top: '10%' //vertically centered
+      }).show();
+      $(this).on('mouseleave', function(){
+        $('.thumbnail').hide();
+      });
+    });
+});

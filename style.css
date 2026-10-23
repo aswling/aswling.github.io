@@ -1,107 +1,74 @@
 /*STYLESHEET*/
-@import url("https://use.typekit.net/snc8yxq.css");
+@font-face {font-family: "akzidenz-gro lt"; src: url("akzidenzgrotesk/AkzidGroStdLig.otf"), format("opentype");}
+@font-face {font-family: "akzidenz-gro reg"; src: url("akzidenzgrotesk/AkzidGroStdReg.otf"), format("opentype");}
 
 /*UNIVERSAL*/
 ::-webkit-scrollbar { display: none; }
 html {
 	background-color: #F7F5F3;
 	margin: 0 auto;
+
 }
 header { max-width: 100%; }
-header img {
-	max-width: 5%;
+header a {
+	color: #000;
+	text-decoration: none;
+	max-width: 33%;
 	float: left;
 	display: inline;
 }
 nav {
-	font-family: europa, sans-serif;
-	font-weight: 400;
-	font-style: normal;
+	font-family: akzidenz-gro lt, sans-serif;
+	font-size:14pt;
 }
 ul { text-align: right; }
 nav li {
 	list-style: none;
 	display: inline;
 	padding-left: 1em;
-	font-size: 14pt;
 }
+nav a { color: #000; }
 body {
 	margin: 0 1em;
-	font-family: europa, sans-serif;
-	font-weight: 100;
-	font-style: normal;
+	font-family: akzidenz-gro lt, sans-serif;
 	font-size: 16pt;
 }
 a {
 	color: #0000ff;
 	text-decoration: none;
 }
-a:hover { font-style: italic; }
-#list ul { text-align: left; }
-#list li {
-	display: list-item;
-	list-style-position: inside;
+b {	font-family: akzidenz-gro reg, sans-serif; }
+header a:hover,nav a:hover, footer a:hover { color: #0000ff; }
+footer a {
+	float: right;
+	color: #000;
 }
-footer a { float: right; }
 footer p {
+	font-family: akzidenz-gro lt, sans-serif;
 	font-size: 12pt;
-	color: #0000ff;
-	font-family: europa, sans-serif;
-	font-weight: 400;
-	font-style: normal;
 }
 
 /*FRONT PAGE*/
-.gallery {
-	padding-top: 1em;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
+.home ul {
+	list-style: none;
+	text-align: left;
+	padding-left: 0;
 }
-.cell {
-	display: inline-block;
-	max-width: calc(97%/3);
-	margin-right: .25em;
+.home a {
+	font-family: akzidenz-gro reg, sans-serif;
+	font-size: 32pt;
+	color: #000;
 }
-.thumb {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: flex-start;
-}
-.thumb img {
-	max-width: 100%;
-	height: auto;
-}
-.thumb a {
-	background: linear-gradient(#0000ff, #e87dff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.home a:hover { color: #0000ff; }
+.thumbnail { position: absolute; }
+.thumbnail img{
+	max-width: 500px;
+	max-height: 500px;
 }
 
-/*ABOUT*/
-#profile {
-	display: inline-block;
-	width: 100%;
-}
-#profile h2 {
-	font-family: europa, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 32pt;
-	margin: 0 0 -.5em 0;
-	background: linear-gradient(#0000ff, #e87dff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-#profile h3 { margin: 0 0 -.5em 0; }
-#info img {	max-width: calc(100%/3); }
+
+/*INFO*/
+.info { margin: 2em 0 0 0; }
 #social li  {
 	list-style: none;
 	display: inline;
@@ -115,41 +82,36 @@ footer p {
 /*WORK*/
 .work { padding-top: auto; }
 .work h1 {
-	font-family: europa, sans-serif;
-	font-weight: 700;
-	font-style: normal;
+	font-family: akzidenz-gro reg, sans-serif;
 	font-size: 32pt;
+	font-weight: normal;
 	margin: 1em 0 -.5em 0;
-	background: linear-gradient(#0000ff, #e87dff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
-.work h3, .work b {
-	font-family: europa, sans-serif;
-	font-weight: 700;
-	font-style: normal;
+.work h3 {
+	font-family: akzidenz-gro reg, sans-serif;
+	font-weight: normal;
 	margin: 0 0 -.5em 0;
 }
 .workcover, .work1x, .work2x, .work3x, .work4x { text-align: center; }
 .workcover img { max-width: 80%; } /*desktop: 1 column, mobile: 1 column*/
 .work1x img { max-width: 45%; } /*desktop: 2 column, mobile: 1 column*/
-.workcover video { max-width: 50%; } /*vertical*/
-.work1x video { max-width: 80%; } /*horizontal*/
+.workcover video { max-width: 80%; } /*horizontal*/
+.work1x video { max-width: 50%; } /*vertical*/
 .work2x video {
 	display: inline;
-	max-width: calc(100%/3);
+	max-width: 45%;
 }
 .work3x video {
 	display: inline;
-	max-width: 30%;
+	max-width: 33%;
 }
-.work2x img, {
+.work2x img {
 	display: inline;
-	max-width: calc(100%/3);
+	max-width: 45%;
 }
 .work3x img {
 	display: inline;
-	max-width: 30%;
+	max-width: 33%;
 }
 .work4x img {
 	display: inline;
@@ -170,56 +132,38 @@ footer p {
 /*RESPONSIVE*/
 @media screen and (min-width: 0px) and (max-width: 600px) {
 	html { max-width: 100%; }
-	header img { max-width: 10%; }
-	#intro h1, #profile h2 { font-size: 28pt; }
-	.thumb {
-		margin: 0 auto;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		align-items: baseline;
-		align-content: stretch;
-	}
-	.cell {
-		display: inline-block;
-		max-width: 100%;
-		margin: 0 auto;
-		margin-bottom: .15em;
-	}
-	#profile img {
-		float: none;
-		max-width: 100%;
-	}
-	#profile p { font-size: 16pt; }
 	footer p { font-size: 12pt; }
+	.home li { padding-top: .5em; } 
+}
+@media screen and (min-width: 480px) and (max-width: 600px) {
+	html { max-width: 100%; }
+	footer p { font-size: 12pt; }
+	.home li { padding-top: .5em; } 
+
+	/*TEXT RESIZING*/
+	.home li { padding-top: .5em; }
+	.home a, .work h1 { font-size: 48pt; }
+	header, nav { font-size: 24pt; }
+	body { font-size: 28pt; }
+	.credits p, footer p { font-size: 16pt; }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px){
+	html { max-width: 100%; }
+}
+@media screen and (min-width: 0px) and (max-width: 1024px){
 	.work img {
+		margin: 0 auto;
 		display: block;
 		max-width: 100%;
 	}
-	.work1x video { max-width: 100%; }
-	.work2x img, .work3x img {
+	.work1x img, .work1x video { max-width: 100%; }
+	.work2x img {
 		display: inline;
 		max-width: 45%;
 	}
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-	html { max-width: 100%; }
-	#intro h1 { font-size: 32pt; }
-	.thumb {
-		margin: 0 auto;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		align-items: baseline;
-		align-content: stretch;
-	}
-	.cell {
-		display: inline-block;
-		max-width: 48%;
-		margin-right: .15em;
-		margin-bottom: .15em;
+	.work3x img, .work3x video {
+		display: inline;
+		max-width: 30%;
 	}
 }
 @media screen and (min-width: 1366px) {
@@ -227,16 +171,4 @@ footer p {
 }
 @media screen and (min-width: 1550px) {
 	.work { padding-top: 1em; }
-}
-@media screen and (min-width: 1920px) {
-	.gallery {
-		padding-top: 1em;
-		width: 105%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		align-items: flex-start;
-		align-content: flex-start;
-	}
 }
